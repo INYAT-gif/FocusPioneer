@@ -3,82 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Inyat Nathani's portfolio showcasing IT and project management expertise.">
-  <meta name="keywords" content="Portfolio, IT, Project Management, Development">
-  <meta name="author" content="Inyat Nathani">
-  <title>Inyat Nathani - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <title>Inyat's Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .about, .projects, .contact {
+      margin-bottom: 20px;
+    }
+
+    .about h2, .projects h2, .contact h2 {
+      color: #333;
+    }
+
+    .projects img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    form input, form textarea, form button {
+      margin-bottom: 10px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #555;
+    }
+  </style>
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <h1>Hello, I'm <span class="highlight">Inyat Nathani</span></h1>
-      <p>IT Project Manager & Web Developer passionate about creating innovative solutions.</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/inyat/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/inyat" target="_blank">GitHub</a>
-      </div>
-    </div>
+  <header>
+    <h1>Inyat's Portfolio</h1>
   </header>
-
-  <!-- Projects Section -->
-  <section class="projects">
-    <div class="container">
-      <h2>My Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <img src="images/project1.jpg" alt="Project 1">
-          <h3>React Web App</h3>
-          <p>A responsive web application with Azure AD authentication.</p>
-          <div class="links">
-            <a href="https://github.com/inyat/react-app" target="_blank">GitHub</a>
-            <a href="https://react-app-demo.netlify.app" target="_blank">Live Demo</a>
-          </div>
-        </div>
-        <div class="project-card">
-          <img src="images/project2.jpg" alt="Project 2">
-          <h3>OutSystems CRM</h3>
-          <p>A CRM system built to manage contacts and sales processes efficiently.</p>
-          <div class="links">
-            <a href="https://github.com/inyat/outsystems-crm" target="_blank">GitHub</a>
-            <a href="https://outsystems-crm-demo.netlify.app" target="_blank">Live Demo</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="about">
-    <div class="container">
+  <div class="container">
+    <section class="about">
       <h2>About Me</h2>
-      <p>
-        I'm an experienced IT Project Manager with a passion for creating impactful digital solutions. 
-        My expertise lies in project management, system implementation, and web development. 
-        I'm always excited to explore new technologies and make a difference through innovation.
-      </p>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="contact">
-    <div class="container">
+      <p>Hello! I'm Inyat, a passionate IT professional with a knack for creating innovative solutions and delivering outstanding results.</p>
+    </section>
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <img src="project1.jpg" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>Description of the project goes here.</p>
+      </div>
+      <div class="project">
+        <img src="project2.jpg" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Description of the project goes here.</p>
+      </div>
+    </section>
+    <section class="contact">
       <h2>Contact Me</h2>
-      <p>Feel free to reach out to discuss projects, collaboration opportunities, or just to say hi!</p>
-      <form action="https://formspree.io/f/your-form-id" method="POST">
+      <form action="https://formspree.io/f/xldeyvye" method="POST">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2024 Inyat Nathani. All Rights Reserved.</p>
-  </footer>
+    </section>
+  </div>
 </body>
 </html>
